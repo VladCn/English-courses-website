@@ -1,0 +1,14 @@
+.section {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media screen and(min-width:1366px) {
+  .section {
+    max-width: 1688px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}

@@ -1,0 +1,49 @@
+.btn {
+  color: var(--primary-background-color);
+  background-color: var(--primary-accent-color);
+  border: 2px solid var(--primary-accent-color);
+
+  font-weight: var(--fw-bold);
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  padding: 14px 12px;
+  cursor: pointer;
+
+  transition: color var(--transition-duration) var(--transition-timing-function),
+    background-color var(--transition-duration) var(--transition-timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--primary-accent-color);
+    background-color: transparent;
+  }
+}
+
+// 480+
+@media screen and (min-width: 480px) {
+  .btn {
+    width: 260px;
+    padding: 14px 0;
+  }
+}
+
+// 768+
+@media screen and (min-width: 768px) {
+  .btn {
+    padding: 17px 46px 16px 46px;
+  }
+}
+
+// 1366+
+@media screen and (min-width: 1366px) {
+  .btn {
+    font-size: 14px;
+    line-height: 1.21;
+
+    padding: 27px 70px 26px 70px;
+    width: 354px;
+  }
+}
